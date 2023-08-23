@@ -7,7 +7,7 @@ with st.sidebar:
     #"[View the source code](https://github.com/streamlit/llm-examples/blob/main/Chatbot.py)"
     #"[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/llm-examples?quickstart=1)"
 
-st.title("💬 Chatbot")
+st.title("💬 Neal's Chatbot")
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
 
@@ -16,7 +16,7 @@ for msg in st.session_state.messages:
 
 if prompt := st.chat_input():
     if not openai_api_key:
-        st.info("Please add your OpenAI API key to continue.")
+        st.info("Please add your OpenAI API key to continue.  No keys will be stored.")
         st.stop()
 
     openai.api_key = openai_api_key
