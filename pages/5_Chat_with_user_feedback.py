@@ -32,7 +32,7 @@ if prompt := st.chat_input(placeholder="Tell me a joke about sharks"):
     st.chat_message("user").write(prompt)
 
     if not openai_api_key:
-        st.info("Please add your OpenAI API key to continue.")
+        st.info("Please add your OpenAI API key to continue. No keys will be stored")
         st.stop()
     else:
         openai.api_key = openai_api_key
