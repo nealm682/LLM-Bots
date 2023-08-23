@@ -24,6 +24,6 @@ with st.form("myform"):
     topic_text = st.text_input("Enter prompt:", "")
     submitted = st.form_submit_button("Submit")
     if not openai_api_key:
-        st.info("Please add your OpenAI API key to continue.")
+        st.info("Please add your OpenAI API key to continue. No keys will be stored.")
     elif submitted:
         blog_outline(topic_text)
