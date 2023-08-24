@@ -9,7 +9,7 @@ with st.sidebar:
     openai_api_key = st.text_input("OpenAI API Key", key="langchain_search_api_key_openai", type="password")
     "[Get an OpenAI API key](https://platform.openai.com/account/api-keys)"
 
-st.title("🔎 LangChain - Chat with search")
+st.title("🔎 LangChain - Chat with search using Duck Duck Go")
 
 """
 In this example, we're using `StreamlitCallbackHandler` to display the thoughts and actions of an agent in an interactive Streamlit app.
