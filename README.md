@@ -4,7 +4,9 @@
 
 ## 1. [Chatbot](https://github.com/nealm682/LLM-Bots/blob/main/Chatbot.py)
 
-This is a Streamlit application integrating OpenAI's gpt-3.5-turbo model to provide a conversational interface.
+This is a Streamlit application integrating OpenAI's gpt-3.5-turbo model to provide a conversational interface.  
+Working demo: https://nealm682-evwmv444vigdxwmjyjnjzz.streamlit.app/
+
 
 **Key Features**:
 - Sidebar input for OpenAI API key.
